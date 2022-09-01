@@ -1,0 +1,60 @@
+<div class="container register-form">
+    <div class="form">
+        <div class="note">
+            <p>Fill the Employee Details</p>
+        </div>
+        <form class="formclass" [formGroup]="AddEmployee" >
+           
+            <div class="form-group">
+                <span *ngIf="name && name.invalid && name.touched">Please enter valid name</span>
+                <input type="text" class="form-control" placeholder="  Your Name *" formControlName="name"/>
+
+            </div>
+
+            <div class="form-group">
+                <span *ngIf="gender && gender.invalid && gender.touched">Please enter valid gender name(Male OR Female)</span>
+                <input type="text" class="form-control" placeholder="  Gander *" formControlName="gender" required/>
+
+            </div>
+            <!-- <div>
+                <input id="male" type="radio" value="male" name="gender" formControlName="gender" ngModel>
+                <label for="male">Male</label>
+             </div>
+          
+             <div>
+                <input id="female" type="radio" value="female" name="gender" formControlName="gender" ngModel>
+                <label for="female">Female</label>
+             </div> -->
+
+            <div class="form-group">
+                <span *ngIf="age && age.invalid && age.touched">Please enter valid age between 18 to 62 </span>
+                <input type="number" class="form-control" placeholder="  Age *" formControlName="age" required/>
+
+            </div>
+
+
+            <div class="form-group">
+                <span *ngIf="salary && salary.invalid && salary.touched">Please enter valid salary</span>
+                <input type="number" class="form-control" placeholder="  Salary *" formControlName="salary" required/>
+
+            </div>
+
+
+            <div class="form-group">
+                <span *ngIf="city && city.invalid && city.touched">Please enter valid city name</span>
+                <input type="text" class="form-control" placeholder="  City *" formControlName="city" required/>
+                 
+            </div>
+
+
+            <div>
+                <button type="submit" class="btnSubmit" (click)="submitdata()" [disabled]="AddEmployee.invalid" [hidden]="hide">Submit</button>
+
+                <button type="submit" class="btnSubmit" [hidden]="hideed" (click)="savedata()" >Save</button>
+            </div>
+            <!-- [hidden]="!hide" -->
+        </form>
+       
+    </div>
+</div>
+

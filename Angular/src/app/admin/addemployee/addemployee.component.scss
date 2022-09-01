@@ -1,0 +1,41 @@
+.note
+{
+    text-align: center;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+    font-size: 35px;
+    width: 900px;
+    margin-left: 110px;
+}
+.form-control{
+    border-radius:0.9rem;
+    height: 50px;
+    margin-bottom: 30px;
+    width: 400px;
+    
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:0.9rem;
+    padding: 1%;
+    width: 15%;
+    height: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+.btnSubmit:hover{
+    background: #63788f;
+    color: white;
+}
+.formclass{
+    padding-top: 50px;
+    margin-left: 360px;
+}
+span{
+    color: red;
+}
